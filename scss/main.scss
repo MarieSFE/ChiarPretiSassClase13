@@ -1,0 +1,38 @@
+
+//variables (declarando e inicializando)
+
+$azul:green;
+$pTop:20px;
+$negro:black;
+$flex:flex;
+
+//nesting
+h1{
+    color:blue;
+}
+
+li{
+    padding: $pTop;
+    a{
+        color: $azul;
+    &:hover{
+        background-color:burlywood;
+
+        }
+    }
+
+}
+
+//traernos los partials
+
+@import "grid";
+@import "nav";
+@import "footer";
+@import "colores";
+@import "contenido";
+
+
+
+
+
+
